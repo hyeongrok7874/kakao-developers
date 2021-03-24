@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    background-color: black;
+}
+header{
+    width: 1792px;
+    height: 74px;
+    background-color: #1a1a1c;
+    padding: 13px 20px 24px 32px;
+}
+h1 {
+    width: 176px;
+    margin: 0px;
+    display: inline-block;
+}
+h1 > img {
+    width: 176px;
+    height: 24px;
+    display: inline-block;
+}
+.list{
+    text-align: right;
+    margin-top: -30px;
+    margin-right: 110px;
+}
+.list > a{
+    font-size: 16px;
+    margin-right: 35px;
+    color: white;
+    text-decoration: none;
+}
+.list > a:hover{
+    color: gray;
+}
+.img > img {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    margin-left: 1620px;
+    margin-top: -27px;
+    margin-bottom: 30px;
+}
+.sel-lang{
+    margin-top: -60px;
+    margin-left: 1670px;
+    margin-bottom: 500px;  
+}
+.sel-lang > a {
+    text-decoration: none; 
+    background-color: #1a1a1c;
+    border: 0;
+    font-size: 14px;
+    color: white;
+    margin-right: 5px;
+}
+.sel-lang .eng {
+    color: gray;
+}
+section{
+    width: 1160px;
+    height: 858px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+h2{
+    color: gray;
+    font-size: 30px;
+    font-weight: 510;
+}
+.boxes{
+    margin-top: 35px;
+}
+.boxes > li{
+    list-style-type: none;
+    width: 278px;
+    height: 320px;
+    background-color: #1a1a1c;
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+    padding-left: 35px;
+}
+.boxes .map{
+    margin-right: -20px;
+}
+.boxes > li > h2 {
+    color: white;
+    font-size: 23px;
+    padding-top: 30px;
+    font-weight: 600;
+}
+.boxes > li > p{
+    color: hsla(0,0%,100%,.6);
+    font-size: 14px;
+    padding-top: 20px;
+    padding-right: 30px;
+    line-height: 24px;
+}
+.boxes > li > img{
+    width: 54px;
+    height: 54px;
+    float: right;
+    margin-top: -40px;
+    margin-right: 20px;
+}
+.boxes > li > a{
+    text-decoration: none;
+    width: 106px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background-color: hsla(0,0%,100%,.05);
+    margin-right: 1px;
+    padding-top: 9px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.boxes .all-product{
+    margin-right: -15px;
+}
+.boxes > li > a:hover{
+    background: gray;
+}
