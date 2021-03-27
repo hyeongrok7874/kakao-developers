@@ -8,52 +8,43 @@
 body{
     background-color: black;
 }
-header{
-    width: 1792px;
+.header-wrap{
     height: 74px;
     background-color: #1a1a1c;
-    padding: 13px 20px 24px 32px;
+    display: flex;
     justify-content: space-between;
 }
-h1 {
-    width: 176px;
-    margin: 0px;
-    display: inline-block;
-    justify-content: space-between;
+.header-wrap .header-img-wrap {
+    width: 240px;
+    height: 74px;
+    padding: 27px 32px 23px; 
+    margin: 0;
 }
-h1 > img {
+.header-wrap .header-img-wrap > h1 > img {
     width: 176px;
     height: 24px;
-    display: inline-block;
+    display: block;
 }
-.head .list{
-    text-align: right;
-    margin-top: -35px;
-    margin-right: 110px;
+.header-wrap .manu-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
-.head .list > a{
-    font-size: 16px;
-    margin-right: 35px;
-    color: white;
+.header-wrap .manu-wrap .one-depth > a{
     text-decoration: none;
+    color: white;
+    margin-right: 35px;
 }
-.head .list > a:hover{
+.header-wrap .manu-wrap .one-depth > a:hover{
     color: gray;
 }
-.head .button > img {
-    display: inline-block;
+.header-wrap .manu-wrap .btn > img {
     width: 27px;
     height: 27px;
-    margin-left: 1620px;
-    margin-top: -27px;
-    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-top: 5px;
 }
-.head .sel-lang{
-    margin-top: -60px;
-    margin-left: 1670px;
-    margin-bottom: 500px;  
-}
-.head .sel-lang > a {
+.header-wrap .manu-wrap .lang-sel > a {
     text-decoration: none; 
     background-color: #1a1a1c;
     border: 0;
@@ -61,7 +52,7 @@ h1 > img {
     color: white;
     margin-right: 5px;
 }
-.head .sel-lang .eng {
+.header-wrap .manu-wrap .lang-sel .eng {
     color: gray;
 }
 section{
@@ -73,7 +64,7 @@ section{
 h2{
     color: gray;
     font-size: 30px;
-    font-weight: 510;
+    font-weight: 600;
 }
 .boxes{
     margin-top: 35px;
@@ -93,9 +84,10 @@ h2{
 }
 .boxes > li > h2 {
     color: white;
-    font-size: 23px;
+    font-size: 22px;
     padding-top: 30px;
-    font-weight: 600;
+    font-weight: 400;
+    font-family: NotoSans Medium,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,돋움,dotum,sans-serif;
 }
 .boxes > li > p{
     color: hsla(0,0%,100%,.6);
@@ -123,14 +115,6 @@ h2{
     padding-top: 9px;
     font-size: 14px;
     margin-top: 50px;
-}
-.boxes .all-product{
-    margin-right: -15px;
-    transition: 0.5s;
-    background: rgb(0, 0, 124);
-}
-.boxes .all-product:hover{
-    background: rgb(20, 20, 153)
 }
 .boxes > li > a:hover{
     background: gray;
@@ -165,7 +149,7 @@ h2{
     margin-top: 27px;
 }
 .boxes > li > .sync > a{
-    ext-decoration: none;
+    text-decoration: none;
     width: 106px;
     height: 40px;
     display: inline-block;
@@ -178,5 +162,21 @@ h2{
     margin-top: 27px;
 }
 .boxes .all-product{
-    
+    margin-right: -15px;
+    background: rgb(0, 0, 124);
+}
+.boxes .all-product .overlay{
+    width: 0;
+    height: 320px;
+    transform: translate(-35px, -57px);
+    background-color: rgba(172, 172, 172, 0.178);
+}
+.boxes .all-product:hover .overlay{
+    width: calc(100% + 35px);
+    transition: .5s;
+    cursor: pointer;
+}
+.boxes .all-product .overlay > a{
+    width: 100%;
+    background-color: white;
 }
