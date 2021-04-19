@@ -65,6 +65,7 @@ h2{
     color: gray;
     font-size: 30px;
     font-weight: 600;
+    display: inline-block;
 }
 .boxes{
     margin-top: 35px;
@@ -77,7 +78,7 @@ h2{
     float: left;
     margin-right: 15px;
     margin-top: 15px;
-    padding-left: 35px;
+    padding: 32px;
 }
 .boxes .map{
     margin-right: -20px;
@@ -85,7 +86,6 @@ h2{
 .boxes > li > h2 {
     color: white;
     font-size: 22px;
-    padding-top: 30px;
     font-weight: 400;
     font-family: NotoSans Medium,Malgun Gothic,맑은 고딕,Apple SD Gothic Neo,돋움,dotum,sans-serif;
 }
@@ -93,19 +93,18 @@ h2{
     color: hsla(0,0%,100%,.6);
     font-size: 14px;
     padding-top: 20px;
-    padding-right: 30px;
     line-height: 24px;
 }
 .boxes > li > img{
     width: 54px;
     height: 54px;
     float: right;
-    margin-top: -40px;
-    margin-right: 20px;
+    margin-top: -15px;
+    margin-left: 30px;
 }
 .boxes > li > a{
     text-decoration: none;
-    width: 106px;
+    width: 104px;
     height: 40px;
     display: inline-block;
     text-align: center;
@@ -121,7 +120,7 @@ h2{
 }
 .boxes > li .social > a{
     text-decoration: none;
-    width: 106px;
+    width: 104px;
     height: 40px;
     display: inline-block;
     text-align: center;
@@ -137,7 +136,7 @@ h2{
 }
 .boxes > li > .channel > a{
     text-decoration: none;
-    width: 106px;
+    width: 104px;
     height: 40px;
     display: inline-block;
     text-align: center;
@@ -150,7 +149,7 @@ h2{
 }
 .boxes > li > .sync > a{
     text-decoration: none;
-    width: 106px;
+    width: 104px;
     height: 40px;
     display: inline-block;
     text-align: center;
@@ -168,11 +167,11 @@ h2{
 .boxes .all-product .overlay{
     width: 0;
     height: 320px;
-    transform: translate(-35px, -57px);
+    transform: translate(-31px, -59px);
     background-color: rgba(172, 172, 172, 0.178);
 }
 .boxes .all-product:hover .overlay{
-    width: calc(100% + 35px);
+    width: calc(100% + 62px);
     transition: .5s;
     cursor: pointer;
 }
